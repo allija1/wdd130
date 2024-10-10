@@ -18,6 +18,7 @@ h2 {
 
 .herodiv {
 	margin: 10px auto;
+	position: fixed; /*If removed, What happens? */
 }
 
 .herodiv img {
