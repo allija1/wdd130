@@ -151,16 +151,27 @@ footer p {
     padding: 10px;
 }
 
-.hero img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
+.hero {
+    position: relative; 
+    width: 100%; 
+    height: 100vh; 
+    overflow: hidden;
+  }
 
 .heroimg {
-    width: 100%;
-    border-radius: 10px;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+.hero h1, .hero article {
+    position: absolute; 
+    color: white; 
+    z-index: 2;
 }
 
 .hero h1 {
