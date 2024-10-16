@@ -151,6 +151,11 @@ footer p {
     padding: 10px;
 }
 
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 .heroimg {
     width: 100%;
