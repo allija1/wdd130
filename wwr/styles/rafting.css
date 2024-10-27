@@ -232,6 +232,13 @@ footer p {
     color: var(--primary-color);
 }
 
+.wireframe {
+    text-align: left;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 0.8em;
+    color: var(--primary-color);
+
+}
 
 
 /* HISTORY */
