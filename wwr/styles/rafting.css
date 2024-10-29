@@ -187,6 +187,38 @@ main{
     background-color: var(--accent-1);
 }
 
+/* GRID CONTAINER*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /*(auto-fill, minmax*/
+    gap: 1.5rem; 
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%; 
+    height: auto; 
+}
+
+.grid-item h2 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+    text-align: center;
+}
+
+.grid-item p {
+    padding: 0 10px 15px;
+}
+
+
 /* HERO */
 .hero {
     position: relative; 
@@ -345,7 +377,6 @@ footer p {
     color: var(--accent-3);
     font-size: 1rem;
 }
-
 
 
 section{
