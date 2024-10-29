@@ -105,12 +105,89 @@ header nav{
 }
 
 
-/* HERO */
 main{
     margin-top: 10px;
     width: 100%;
 }
 
+/* HOME */
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+}
+
+.homeimg {
+    width: 100%; 
+    height: 100%; 
+    /* object-fit: cover; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+.home h1 {
+    top: 5%;
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(to top, white, var(--secondary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--primary-color);
+    /* text-shadow: 0 0 10px #ffffff, */
+        /* Bright outer glow */
+        /* 0 0 20px #83dcff,
+        0 0 30px #e6f8ff; */
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 4.5rem;
+    letter-spacing: 0.05em;
+}
+
+/* Content in Hero Section */
+.home-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 2; 
+    padding: 20px; 
+    border-radius: 8px;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.home-content p{
+    font-size: 1.35rem;
+    color: var(--accent-3);
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    margin-bottom: 25px;
+} 
+
+/* CTA Button Styling */
+.home-content a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--secondary-color);
+    color: var(--accent-3);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.home-content a:hover {
+    background-color: var(--accent-1);
+}
+
+/* HERO */
 .hero {
     position: relative; 
     width: 100%; 
@@ -161,7 +238,6 @@ main .hero article{
     gap: 3rem;
     width: 95%;
 } 
-
 
 
 article img {
