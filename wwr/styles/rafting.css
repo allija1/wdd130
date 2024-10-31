@@ -132,7 +132,7 @@ main{
     top: 5%;
     width: 100%;
     margin: 0;
-    background: linear-gradient(to top, white, var(--secondary-color));
+    background: linear-gradient(to top, var(--accent-2), var(--secondary-color));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -196,9 +196,9 @@ main{
 }
 
 .grid-item {
-    background-color: var(--accent-1);
+    background-color: var(--accent-2);
     border-radius: 8px;
-    box-shadow: 0 2px 5px var(--accent-2);
+    box-shadow: 0 2px 5px var(--secondary-color);
     overflow: hidden;
     text-align: center;
 }
@@ -212,6 +212,7 @@ main{
     font-size: 1.5rem;
     margin: 15px 0 10px;
     text-align: center;
+    
 }
 
 .grid-item p {
