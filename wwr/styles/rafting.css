@@ -151,7 +151,7 @@ main{
 .home-content {
     position: relative;
     text-align: center;
-    color: white;
+    color: var(--accent-1);
     z-index: 2; 
     padding: 20px; 
     border-radius: 8px;
@@ -175,7 +175,7 @@ main{
     display: inline-block;
     padding: 15px 30px;
     background-color: var(--secondary-color);
-    color: var(--accent-3);
+    color: var(--primary-color);
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
