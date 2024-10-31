@@ -151,7 +151,7 @@ main{
 .home-content {
     position: relative;
     text-align: center;
-    color: var(--accent-1);
+    color: var(--primary-color);
     z-index: 2; 
     padding: 20px; 
     border-radius: 8px;
@@ -174,7 +174,7 @@ main{
 .home-content a {
     display: inline-block;
     padding: 15px 30px;
-    background-color: var(--secondary-color);
+    background-color: var(--accent-1);
     color: var(--primary-color);
     text-decoration: none;
     font-size: 1.1rem;
@@ -212,7 +212,7 @@ main{
     font-size: 1.5rem;
     margin: 15px 0 10px;
     text-align: center;
-    
+    color: var(--primary-color);
 }
 
 .grid-item p {
