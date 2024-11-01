@@ -501,7 +501,7 @@ section{
 /* Main Grid Layout */
 .main-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
     max-width: 1200px;
     margin: 40px auto;
@@ -519,6 +519,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 200px;
 }
 
 .safety h3 {
@@ -556,12 +557,12 @@ section{
 
 
 /* TRIPS TABLE */
-/*.table-flex {
+.table-item {
     text-align: center;
     width: 100%;
-}*/
+}
 
-.table-flex h2 {
+.table-item h2 {
     font-size: 32px;
     color: var(--secondary-color);
     margin-bottom: 20px;
@@ -569,7 +570,7 @@ section{
 }
 
 .trips-table {
-    width: 100%;
+    max-width: 550px;
     border-collapse: collapse;
     font-size: 16px;
     color: var(--secondary-color);
