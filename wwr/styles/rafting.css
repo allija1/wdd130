@@ -32,10 +32,36 @@ h2 {
     font-size: 3.5rem;
 }
 
+h3 {
+    color: var(--secondary-color);
+    font-family: "Archivo Black", sans-serif;
+    text-align: left;
+    margin: 1rem 0px;
+    font-size: 3.5rem;
+}
+
 p {
     color: var(--accent-2);
     font-family: 'Roboto', sans-serif;
     font-size: 0.8em;
+}
+
+tr {
+    color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+td {
+    color: var(--accent-2);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+}
+
+ul {
+    color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
 }
 
 /* HEADER */
@@ -417,8 +443,180 @@ section{
 }
 
 
-/* Contact us */
 
+/* TRIPS */
+/* Trips details*/
+.trip-types{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.trips-types h2 {
+    font-size: 36px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.trips-flex{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 3rem;
+}
+
+.trips-flex .trips-item{
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.trips-flex img{
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+.trips-flex h3 {
+    font-size: 22px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.trips-flex p{
+    font-size: 16px;
+    color: var(--accent-3);
+    line-height: 1.5;
+}
+
+
+/* Main Grid Layout */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    align-items: stretch;
+}
+
+/* SAFETY FLEX */
+.safety {
+    background-color: var(--accent-3);
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.safety h3 {
+    font-size: 22px;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.safety p {
+    font-size: 10px;
+    text-align: left;
+    font-weight: bolder;
+    color: var(--secondary-color);
+}
+.safety ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: var(--primary-color);
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.safety li {
+    margin-bottom: 10px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%;
+}
+
+
+/* TRIPS TABLE */
+/*.table-flex {
+    text-align: center;
+    width: 100%;
+}*/
+
+.table-flex h2 {
+    font-size: 32px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.trips-table th, .trips-table td {
+    border: 1px solid var(--accent-3);
+    padding: 12px;
+    text-align: center;
+}
+
+.trips-table th {
+    background-color: var(--accent-1);
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.trips-table tbody {
+    background-color: var(--primary-color);
+    color: var(--accent-2);
+}
+
+
+/*CTA button*/
+.cta-container {
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--accent-2);
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: black;
+}
+
+/* Contact us */
 .contact-flex{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -478,13 +676,13 @@ section{
 }
 
 .contact form p {
-    color: #fff;
+    color: var(--accent-3);
     font-size: 2rem;
 
 }
 
 .contact form label{
-    color: #fff;
+    color: var(--accent-3);
     font-size: 1.1rem;
 }
 .contact form input.button{
