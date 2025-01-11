@@ -498,8 +498,7 @@ section{
 }
 
 
-/* Main Grid Layout */
-.main-grid {
+.container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
@@ -510,7 +509,7 @@ section{
 }
 
 /* SAFETY FLEX */
-.safety {
+.safety-container {
     background-color: var(--accent-3);
     border: 1px solid var(--secondary-color);
     border-radius: 4px;
@@ -522,20 +521,20 @@ section{
     max-width: 200px;
 }
 
-.safety h3 {
+.safety-container h3 {
     font-size: 22px;
     color: var(--primary-color);
     text-align: center;
     margin-bottom: 10px;
 }
 
-.safety p {
+.safety-container p {
     font-size: 10px;
     text-align: left;
     font-weight: bolder;
     color: var(--secondary-color);
 }
-.safety ul {
+.safety-container ul {
     list-style-type: disc;
     padding-left: 20px;
     color: var(--primary-color);
@@ -544,7 +543,7 @@ section{
     text-align: left;
 }
 
-.safety li {
+.safety-container li {
     margin-bottom: 10px;
 }
 
@@ -557,12 +556,12 @@ section{
 
 
 /* TRIPS TABLE */
-.table-item {
+.table-container{
     text-align: center;
     width: 100%;
 }
 
-.table-item h2 {
+.table-container h2 {
     font-size: 32px;
     color: var(--secondary-color);
     margin-bottom: 20px;
@@ -592,6 +591,39 @@ section{
     background-color: var(--primary-color);
     color: var(--accent-2);
 }
+/* .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-container {
+    width: 60%;
+}
+
+.saf-container-container {
+    width: 35%;
+    margin-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+} */
 
 
 /*CTA button*/
